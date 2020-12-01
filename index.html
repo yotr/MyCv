@@ -1,0 +1,72 @@
+<html>
+<head>
+    <!--https://www.adweek.com/wp-content/uploads/2020/03/behr-zoom-background-feature-2020.jpg-->
+  <title>SIGIN UP</title>
+  <link rel="icon" href="images/736672-200.png">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+<body>
+
+   
+  <main>
+    <div class="backcolorlogin" id="modals">
+<form id="hima">
+       
+        <label for="firstName"><span style="color: black;">Email</span></label><br>
+        <input type="text" style="color: darkcyan" placeholder="Email" name="firstName" id="email"><br>
+        <label for="lastName"><span style="color: black;">Password</span></label><br>
+        <input type="password" style="color: darkcyan" placeholder="password" name="lastName" id="password"><br>  
+        <button id="addBtnsi" class="btn waves-effect waves-light">signup <i class="material-icons">account_circle</i></button>
+        <button id="addBtnsin" class="btn waves-effect waves-light">signin <i class="material-icons">forward</i></button>
+        
+    </form>
+    </div>
+    
+  </main>
+
+  
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB8aPqoRQhgY7qSnept7d6cETKO9wW4PUY",
+    authDomain: "myauth-f8023.firebaseapp.com",
+    databaseURL: "https://myauth-f8023.firebaseio.com",
+    projectId: "myauth-f8023",
+    storageBucket: "myauth-f8023.appspot.com",
+    messagingSenderId: "1051060214176",
+    appId: "1:1051060214176:web:da37bf66c24d1916c36cc5",
+    measurementId: "G-YX0TE3RQDZ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const auth=firebase.auth();
+
+const db=firebase.firestore();
+db.setings({ timestampsInSnapshots:true});
+</script>
+<!--bootstrab js-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ <!--bootstrab js--> <script src="./main.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
